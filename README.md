@@ -66,3 +66,28 @@ IoT 개발자 C++ 리포지토리
 
 - namespace [C++](./Day01/namesp.cpp)
     - 해더파일을 활용한 예제 [C++](./Day01/scope.cpp)
+
+- 메모리 동적 할당
+    - C : malloc - free [C](./Day01/new.cpp)
+    - C++ : new - delete [C++](./Day01/new2.cpp), [C++](./Day01/new3.cpp)
+    ```C++
+    자료형 포인터 = new 자료형(크기);
+    // 생성시 초기화 바로 한다면
+    // 자료형 포인터 = new 자료형[크기]{ 초기화 값 }
+    ...
+    delete[] 포인터;
+    ```
+
+- 참조자 (&) [reference 1](./Day01/ref2.cpp)
+    - 다른 함수에 선언된 지역변수의 값을 바꿀 수 있음 
+        - 포인터로도 가능 [C++](./Day01/ref.cpp)
+
+    [reference 2](./Day01/ref3.cpp)
+    - 레퍼런스는 선언할때 초기화 동시에 해야함
+    - 참조자를 참고자로 초기화 할 수 있음
+    - 변경도 가능
+
+    [reference 3](./Day01/ref4.cpp)
+    - 상수 레퍼런스 : const : 상수도 참조 가능하다 
+
+- 구조체 [struct](./Day01/st_c2.cpp) [struct](./Day01/st_c3.cpp)
