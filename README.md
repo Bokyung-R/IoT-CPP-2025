@@ -78,20 +78,66 @@ IoT 개발자 C++ 리포지토리
     ...
     delete[] 포인터;
     ```
+    
+    - delete[] 포인터하고나서 포인터 = nullptr 이유
+        : delete - 메모리 반환, 포인터 삭제 X
+          dangling point가 됨으로 delete 후 포인터를 nullptr로 설정해줘야함
 
 - 참조자 (&) [reference 1](./Day01/ref2.cpp)
     - 다른 함수에 선언된 지역변수의 값을 바꿀 수 있음 
         - 포인터로도 가능 [C++](./Day01/ref.cpp)
 
-    - [reference 2](./Day01/ref3.cpp)
-        - 레퍼런스는 선언할때 초기화 동시에 해야함
-        - 참조자를 참고자로 초기화 할 수 있음
-        - 변경도 가능
+    - 레퍼런스는 선언할때 초기화 동시에 해야함
+    - 참조자를 참조자로 초기화 할 수 있음
+    - 변경도 가능
+        - [reference 2](./Day01/ref3.cpp)
 
-    - [reference 3](./Day01/ref4.cpp)
-        - 상수 레퍼런스 : const : 상수도 참조 가능하다 
+    - 상수 레퍼런스 : const : 상수도 참조 가능하다 [reference 3](./Day01/ref4.cpp)
 
 - 구조체 
     - 예제
         - [struct1](./Day01/st_c2.cpp)
         - [struct2](./Day01/st_c3.cpp)
+
+    - 클래스는 구조체로부터 왔다.
+
+## 2일차
+- 클래스 
+    - 구성요소
+        1. 접근제어 지시자 (private, public, protected)
+            - 특징 : private - 은닉
+        2. 멤버변수 - 속성, private 영역
+        3. 멤버함수(메서드) - 기능, public 영역
+
+    - 약속! 클래스명의 첫글자는 대문자 
+
+    - 생성자 [constructor](./Day02/class3.cpp)
+        - `클래스명이랑 동일`
+        - 출력(리턴값)이 없음
+        - 기능 : 초기화
+        - 생성자 호출로 객체가 만들어짐
+        - 디폴트로 생성되는 생성자가 있음
+        - 명시적으로 생성자를 만든다면 기본적으로 제공되는 디폴트 생성자는 제공되지않음
+        - 오버로딩이 가능함
+
+    - 소멸자
+        - `~클래스명`
+        - 생성자를 소멸
+
+    - 실습
+        - [실습1 MyClass1](./Day02/MyClass.cpp)
+        - [실습2 MyClass2](./Day02/MyClass2.cpp)
+        - [실습3 MyClass3](./Day02/MyClass3.cpp)
+
+    - 클래스밖에서 클래스함수 선언 가능. 
+    ```C++
+    클래스명::함수명(){ }
+    ```
+
+- 변수 초기화 
+    - [init](./Day02/init.cpp)
+    - [클래스 생성 init](./Day02/init3.cpp)
+    - [콜론 초기화 (const, reference)](./Day02/init4.cpp)
+
+- 실습 
+    - [Day02 전체 복습](./Day02/Human.cpp)
