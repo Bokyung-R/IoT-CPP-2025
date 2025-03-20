@@ -137,7 +137,20 @@ IoT 개발자 C++ 리포지토리
 - 변수 초기화 
     - [init](./Day02/init.cpp)
     - [클래스 생성 init](./Day02/init3.cpp)
-    - [콜론 초기화 (const, reference)](./Day02/init4.cpp)
+    - [콜론 초기화 (const, reference, object)](./Day02/init4.cpp)
 
 - 실습 
     - [Day02 전체 복습](./Day02/Human.cpp)
+
+## 3일차
+- 복사 생성자 [copy1](./Day03/copyconstor.cpp), [copy2](./Day03/copyconstructor2.cpp)
+    - 생성자에 생성자를 매개변수로 넣은 것
+    - 동적할당을 할 경우 [deep copy](./Day03/copyconstructor3.cpp)
+        - deep copy : 복사하는 객체도 동적 할당을 받아서 별개로 저장하는 것 
+        - shallow copy : 복사하는 객체는 동적할당을 받지않고 받아오는 것
+
+- 이동 생성자   [copy move constructor](./Day03/movecon2.cpp)
+    - r- value reference를 파라미터로 가짐
+    - 값을 복사하는 것이 아닌 r-value에 있는 값이 이동하는 것
+    - move 키워드를 통해 r-value로 캐스팅되어 이동생성자에 전달됨
+    - 변화 생성자
