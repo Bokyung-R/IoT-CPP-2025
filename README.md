@@ -149,8 +149,18 @@ IoT 개발자 C++ 리포지토리
         - deep copy : 복사하는 객체도 동적 할당을 받아서 별개로 저장하는 것 
         - shallow copy : 복사하는 객체는 동적할당을 받지않고 받아오는 것
 
+- 변환 생성자
+
 - 이동 생성자   [copy move constructor](./Day03/movecon2.cpp)
     - r- value reference를 파라미터로 가짐
     - 값을 복사하는 것이 아닌 r-value에 있는 값이 이동하는 것
     - move 키워드를 통해 r-value로 캐스팅되어 이동생성자에 전달됨
     - 변화 생성자
+
+-  static
+
+- 연산자 오버로딩
+
+- 실습
+
+## 4일차
