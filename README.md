@@ -307,13 +307,13 @@ IoT 개발자 C++ 리포지토리
         - vector.capcity() : 벡터에 할당된 메로리 크기를 리턴
         - vector.begin() : 벡터 시작점의 주소값 반환
         - vector.end() : 벡터 끝부분 + 1 주소값 반환
-            `vector.capcity() != vector.size()`
+            - `vector.capcity() != vector.size()`
         - vector.push_back(value) : 마지막 원소 뒤에 value 추가
         - vector.insert(idx, value) : idx번째 위치에 value 삽입
         - vector.front() : 벡터의 첫번째 값 
         - vector.end() : 벡터의 마지막 값
-            `vector.front() != vector.begin()`
-            `vector.back() != vector.end()`
+            - `vector.front() != vector.begin()`
+            - `vector.back() != vector.end()`
         - vector.rbegin() : 마지막 주소
         - vector.rend() : 처음 원소의 이전 주소
 
